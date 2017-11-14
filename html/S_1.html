@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+<!--meta:vp--><!--这是视口快捷键-->
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<!--meta:compat--><!--强制IE以最高内核来渲染代码,IE8一下不支持响应式和H5-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!--[if IE lte8]>
+<script src="../bootstrap/js/html5shiv.min.js"></script>
+<script src="../bootstrap/js/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+      <link rel="stylesheet" href="../css/S_1.css"/>
+</head>
+<body>
+<div class="container-fluid">
+      <!--为大自然发声-->
+      <div class="S_logo col-md-3">
+            <div class="S_logo_img">
+                  <img src="../img/LOGO.png" alt="" style="border: 0 none;
+    vertical-align: top;"/>
+            </div>
+          <div class="quancover" style="top: 0px;">
+              <div class="voicequan"></div>
+              <div class="voicequan" ></div><div class="voicequan"></div>
+          </div>
+            <div class="quandots"></div>
+      </div>
+    <!--导航-->
+    <div id="paper-back" class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+        <nav>
+            <div class="close"></div>
+            <a href="#">首页</a>
+            <a href="#">背景故事</a>
+            <a href="#">相关新闻</a>
+            <a href="#">我要发声</a>
+        </nav>
+    </div>
+    <div id="paper-window">
+        <div id="paper-front">
+            <div class="hamburger"><span></span></div>
+            <div id="c1">
+                <div>
+                    <header class="htmleaf-header">
+                        <h1><span>大自然不需要人类</span><span> , </span><span>人类需要大自然</span></h1>
+                    </header>
+                    <p>Nature does not need man, man needs nature</p>
+                </div>
+                <div>
+                    <div class="col-sm-5 pull-right animated bounceInRight S_midDiv" style="position: relative;bottom: 50px;background-color: #0F0">
+                        <h1>TNC在亚太</h1>
+                        <h4>帮助世界上经济发展速度最快的地区应对环境问题。
+                            　　与当地社区携手，我们不仅仅保护雨林、热带稀树草原、珊瑚礁和人们的生计——我们还在保护世界的未来。在TNC亚洲和太平洋地区的长期工作中发挥你的作用，支持我们的全球保护工作！</h4>
+                        <h2>中国</h2>
+                        <p>
+                            TNC正在帮助中国政府实现自然环境和人类发展之间的平衡。我们通过引入新的技术，包括为贫困的社区创造新的增加收入的机会，减少经济发展和气候变化对生境造成的危害。请加入我们，保护中国的森林，水和野生动物。
+                        </p>
+                    </div>
+                    <div class="col-sm-5 pull-left" style="position: relative;bottom: 50px;background-color: #0F0">
+                        <h1>TNC在亚太</h1>
+                        <h4>帮助世界上经济发展速度最快的地区应对环境问题。
+                            　　与当地社区携手，我们不仅仅保护雨林、热带稀树草原、珊瑚礁和人们的生计——我们还在保护世界的未来。在TNC亚洲和太平洋地区的长期工作中发挥你的作用，支持我们的全球保护工作！</h4>
+                        <h2>中国</h2>
+                        <p>
+                            TNC正在帮助中国政府实现自然环境和人类发展之间的平衡。我们通过引入新的技术，包括为贫困的社区创造新的增加收入的机会，减少经济发展和气候变化对生境造成的危害。请加入我们，保护中国的森林，水和野生动物。
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="carousel">
+                        <div class="imglist">
+                            <ul>
+                                <li class="list1"><a href="javascript:;"><img src="../img/1.jpg" alt=""/></a></li>
+                                <li class="list2"><a href="javascript:;"><img src="../img/2.jpg" alt=""/></a></li>
+                                <li class="list3"><a href="javascript:;"><img src="../img/3.jpg" alt=""/></a></li>
+                                <li class="list4"><a href="javascript:;"><img src="../img/4.jpg" alt=""/></a></li>
+                                <li class="list5"><a href="javascript:;"><img src="../img/5.jpg" alt=""/></a></li>
+                                <li class="list6"><a href="javascript:;"><img src="../img/6.jpg" alt=""/></a></li>
+
+                            </ul>
+                        </div>
+                        <div class="line">
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                            <a href="javascript:;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="../bootstrap/js/jquery-1.11.3.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script>
+    $(window).scroll(function () {
+        console.log($(this).scrollTop());
+        if($(this).scrollTop()>10){
+//            $(".right").removeClass("animated bounceOutRight").addClass("animated bounceInRight");
+            $(".S_midDiv").removeClass("animated bounceOutLeft").addClass("animated bounceInLeft");
+        }else {
+//            $(".right").removeClass("animated bounceInRight").addClass("animated bounceOutRight");
+            $(".S_midDiv").removeClass("animated bounceInLeft").addClass("animated bounceOutLeft");
+        }
+    })
+</script>
+<!--<script>-->
+<!--//    进度条-->
+    <!--setInterval(function () {-->
+        <!--$(".jdt").each(function (i) {-->
+           <!--var x=$(this).prop("className");-->
+            <!--$(this).removeClass().addClass(x);-->
+            <!--console.log(x);-->
+
+        <!--});-->
+
+        <!--console.log("1")-->
+    <!--},3000);-->
+
+<!--</script>-->
+<script>
+
+
+    var paperMenu = {
+        $window: $('#paper-window'),
+        $paperFront: $('#paper-front'),
+        $hamburger: $('.hamburger'),
+        offset: 1800,
+        pageHeight: $('#paper-front').outerHeight(),
+        open: function () {
+            this.$window.addClass('tilt');
+            this.$hamburger.off('click');
+            $('#c1, .hamburger').on('click', this.close.bind(this));
+            this.hamburgerFix(true);
+            // console.log('opening...');
+        },
+        close: function () {
+            this.$window.removeClass('tilt');
+            $('#c1, .hamburger').off('click');
+            this.$hamburger.on('click', this.open.bind(this));
+            this.hamburgerFix(false);
+            // console.log('closing...');
+        },
+        updateTransformOrigin: function () {
+            scrollTop = this.$window.scrollTop();
+            equation = (scrollTop + this.offset) / this.pageHeight * 100;
+            this.$paperFront.css('transform-origin', 'center ' + equation + '%');
+        },
+        hamburgerFix: function (opening) {
+            if (opening) {
+                $('.hamburger').css({
+                    position: 'absolute',
+                    top: this.$window.scrollTop() + 30 + 'px'
+                });
+            } else {
+                setTimeout(function () {
+                    $('.hamburger').css({
+                        position: 'fixed',
+                        top: '30px'
+                    });
+                }, 300);
+            }
+        },
+        bindEvents: function () {
+            this.$hamburger.on('click', this.open.bind(this));
+            $('.close').on('click', this.close.bind(this));
+            this.$window.on('scroll', this.updateTransformOrigin.bind(this));
+        },
+        init: function () {
+            this.bindEvents();
+            this.updateTransformOrigin();
+        }
+    };
+    paperMenu.init();
+
+
+
+//    function voicequanWH(){
+//        $(".voicequan").css({
+//            width:parseInt($(this).width())+1+"px",
+//            height:parseInt($(this).height())+1+"px"
+//        });
+//
+//    }
+//    setTimeout(voicequanWH,1000);
+</script>
+<script>
+    /*
+        程序思路：
+        1：页面刷新时设置line图标的颜色
+            1.1：获取line元素；
+            1.2：当前的line按钮是哪个
+            1.3给当前的line按钮设置颜色
+        2：往下翻页
+            2.1:操作DOM是非常耗影响性能，我们是通过操作样式.list1到.list6来让图片变位置；操作数组是最好的;
+            2.2：操作数组的排列顺序;
+            2.3：重新给元素设置样式;
+            2.4:重新设置lineB的样式（点击的应该是当前的list3，而不是一开始的，我们要让浏览器告诉我们谁是当前的list3）；
+            2.5：lineB的计算逻辑要变
+        3:点击按钮翻页（点到的那个按钮，就显示那张图片）计算 翻页的次数 5 1
+        翻了1-5次；
+            3.1：获取当前按钮的索引值
+            3.2：获取点击的按钮的索引
+            3.3：计算翻页次数：负数  向上翻   正数  向上翻
+            3.4：计算当前的样式数组的排列顺序
+            3.5：重新设置图片的样式
+            3.6：更新当前的按钮参数索引值并设置按钮的颜色
+        4:设置自动轮播效果
+     */
+
+    var lineB=$(".line a");//获取line下面所有的a标签
+    index=0;//设置索引值
+    imgArry=["list1","list2","list3","list4","list5","list6"];//将类名存进数组
+    function lineColor(){//设置lineB的颜色
+        $(lineB).eq(index).css("background","#45c17c").siblings().css("background","#ccc"); //在所有的lineB中找到当前的index为0的第一个按钮设置其CSS背景属性，同时设置其兄弟元素的背景颜色；（设置当前选择元素的颜色并且它的兄弟们的颜色都是灰色）
+        // :eq(index) 选择器选取带有指定 index 值的元素。//lineB是jq对象
+    }
+    lineColor();//页面载入的时候当场就执行一次
+
+
+    function nextPic(){
+        imgArry.unshift(imgArry[5]);//往下翻页的时候把list6放到list1原来的位置
+        imgArry.pop();//将数组最后一个类名删除。
+        $("li").each(function(i,e){//each简单的说就是for循环从第一个for到最后一个.i是var i=0；e是当前这个元素（所有的元素,元素本身）
+            $(e).removeClass().addClass(imgArry[i]);//删掉原有的所有的类名，再给他加一个新的类名顺序设置；
+        });
+        index++;
+        if(index>5){//当点到最后的时候大于5时，应该让其回到0的位置。
+            index=0;
+        }
+        lineColor();
+    }
+
+    function prePic(){
+        imgArry.push(imgArry[0]);//将第一个元素添加到最后一个
+        imgArry.shift();//删除第一个
+        $("li").each(function(i,e){
+            $(e).removeClass().addClass(imgArry[i]);//删除原有的类名，按照新的类名顺序设置
+        });
+        index--;
+        if(index<0){
+            index=5;
+        }
+        lineColor();
+
+    }
+
+    $(lineB).each(function(){//相当于通过一个for循环和一个闭包来给每一个lineB设置一个事件
+        $(this).click(function(){
+            var nowIndex=$(this).index();//当前的索引值等于当前我点中的元素的索引值（当前元素在整个数组中的索引值）
+            var offset=nowIndex-index;//获取翻页次数
+            if(offset==0){//如果是0，那么就说明我点击的是当前的位置，那么就什么都不做；
+                return;
+            }else if(offset>0){//向下翻
+                for(var i=0;i<offset;i++){//翻几次页，相当于操作几次数组
+                    imgArry.unshift(imgArry[5]);//往下翻页的时候把list6放到list1原来的位置
+                    imgArry.pop();//将数组最后一个类名删除。
+                }
+                $("li").each(function(i,e){//重新设置样式
+                    $(e).removeClass().addClass(imgArry[i]);//删除原有的类名，按照新的类名顺序设置
+                });
+                index=nowIndex;
+                lineColor();
+            }
+            else if(offset<0){
+                for(var i=0;i>offset;i--){//翻几次页，相当于操作几次数组
+                    imgArry.push(imgArry[0]);//往上翻页的时候把list1放到list6原来的位置
+                    imgArry.shift();//将数组第一个类名删除。
+                }
+                $("li").each(function(i,e){//重新设置样式
+                    $(e).removeClass().addClass(imgArry[i]);//删除原有的类名，按照新的类名顺序设置
+                });
+                index=nowIndex;
+                lineColor();
+            }
+        })
+    });
+
+
+    $(document).on("click",".list3",function(){
+        nextPic();
+    });//设置点整个页面,在1.8jq以后绑定的事件用on来绑定,点当前的list3，list3的位置是不变的，但是list3的元素是变换的，所以我们要选当前的list3.这是事件委托。我不管你list3是谁。
+
+    $(document).on("click",".list1",function(){
+        prePic();
+    });
+
+    timer=setInterval(nextPic,2000);//每两千毫秒刷新一次；
+    $(".carousel").mouseover(function(){
+        clearInterval(timer);
+    });
+    $(".carousel").mouseleave(function(){
+            timer=setInterval(nextPic,2000);
+        }
+    )
+</script>
